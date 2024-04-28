@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout PayPal</title>
+</head>
+<body>
+    <h1>Checkout PayPal</h1>
+
+    <!-- Inclure le script PayPal Checkout SDK avec votre identifiant client -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AXKv7yEqIG6ffw3UDx-ygZnioLJ6vJcVbV-0C2FQvvLgEffu4RcsZQRJuRe5wMo71J2aJ9yYVU1hUXiM"></script>
+
+    <!-- Placeholder pour le bouton PayPal -->
+    <div id="paypal-button-container"></div>
+
+    <!-- Votre code JavaScript pour initialiser le bouton PayPal -->
+    <script>
+        paypal.Buttons({
+            createOrder: function(data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: '10.00' // Montant de la transaction
+                        }
+                    }]
+                });
+            },
+            onApprove: function(data, actions) {
+                return actions.order.capture().then(function(details) {
+                    alert('Paiement effectué avec succès!');
+                });
+            }
+        }).render('#paypal-button-container');
+    </script>
+</body>
+</html>

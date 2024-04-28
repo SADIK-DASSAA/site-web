@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PACK 2</title>
+    <link rel="stylesheet" href="pack1.css">
+    <link rel="x icon" type="shortcut icon" href="téléchargé.png">
+</head>
+<body>
+
+  <h3>choisissez votre configuration :</h3>
+  <div class="pack">
+      <div class="choix">
+          <select name="RAM" id="ram" onchange="updateButton('ramButton', this.value)">
+            <option value="" selected>Mémoire</option>
+              <option value="8 Go">8 Go</option>
+              <option value="16 Go">16 Go</option>
+              <option value="32 Go">32 Go</option>
+              <option value="64 Go">64 Go</option>
+              <option value="128 Go">128 Go</option>
+          </select>
+      </div>
+      <span>+</span>
+      <div class="choix">
+          <select name="cpu" id="Cpu" onchange="updateButton('cpuButton', this.value)">
+            <option value="" selected>CPU</option>
+              <option value="i9 14900k">i9 14900k</option>
+              <option value="i9 13900k">i9 13900k</option>
+              <option value="Rayzen 9 7950X">Rayzen 9 7950X</option>
+              <option value="Rayzen 9 7950X">Rayzen 3 3100</option>
+              <option value="i7 14700k">i7 14700k</option>
+              <option value="i7 13700k">i7 13700k</option>
+              <option value="M3">M3 </option>
+              <option value="M3 PRO">M3 PRO</option>
+              <option value="Xeon platinum">Xeon platinum 8276L</option>
+          </select>
+      </div>
+      <span>+</span>
+      <div class="choix">
+          <select name="vCore" id="vCore" onchange="updateButton('vCoreButton', this.value)">
+            <option value="" selected>vCore</option>
+              <option value="2">2</option>
+              <option value="4">4</option>
+              <option value="8">8</option>
+              <option value="16">16</option>
+              <option value="32">32</option>
+          </select>
+      </div>
+      <span>+</span>
+      <div class="choix">
+          <select name="stockage" id="stockage" onchange="updateButton('stockageButton', this.value)">
+            <option value="" selected>Stockage</option>
+              <option value="50 Go SSD">50 Go SSD</option>
+              <option value="100 Go SSD">100 Go SSD</option>
+              <option value="200 Go SSD">200 Go SSD</option>              
+              <option value="50 Go NVMe">50 Go NVMe</option>
+              <option value="100 Go NVMe">100 Go NVMe</option>
+              <option value="200 Go NVMe">200 Go NVMe</option>
+              <option value="400 Go NVMe">400 Go NVMe</option>
+
+          </select>
+      </div>
+      <span>+</span>
+      <div class="choix">
+          <select name="système" id="système" onchange="updateButton('systèmeButton', this.value)">
+            <option value="" selected>S.E</option>
+              <option value="Linux">Linux(Ubuntu 20.14, kali Linux, CentOS)</option>
+              <option value="Windows">Windows(Server 2019, Server 2022)</option>
+          </select>
+      </div>
+      <span>+</span>
+      <div class="choix">
+          <select name="securité" id="sécurité" onchange="updateButton('sécuritéButton',this.value)">
+            <option value="" selected>Sécurité</option>
+              <option value="Accès À Distance Sécurisé">Accès À Distance Sécurisé</option>
+              <option value="Mise en place d'une solution de détection d'intrusion">Mise en place d'une solution de détection d'intrusion</option>
+
+          </select>
+      </div>
+      <span>+</span>
+      <div class="choix">
+          <select name="adresse" id="adresse" onchange="updateButton('AdresseIP',this.value)">
+            <option value="" selected>Adresse IP</option>
+              <option value="@ IP Statique">@ IP Statique</option>
+          </select>
+      </div>
+  </div>
+  
+  <h3>Votre configuration est :</h3>
+  <div class="pack">
+      <div class="choix">
+          <button id="ramButton"></button>
+      </div>
+      <span>+</span>
+      <div class="choix">
+          <button id="cpuButton"></button>
+      </div>
+      <span>+</span>
+      <div class="choix">
+          <button id="vCoreButton"></button>
+      </div>
+      <span>+</span>
+      <div class="choix">
+          <button id="stockageButton"></button>
+      </div>
+      <span>+</span>
+      <div class="choix">
+          <button id="systèmeButton"></button>
+      </div>
+      <span>+</span>
+      <div class="choix">
+          <button id="sécuritéButton"></button>
+      </div>
+      <span>+</span>
+      <div class="choix">
+          <button id="AdresseIP"></button>
+      </div>
+  </div>
+  
+  <script>
+      function updateButton(buttonId, newValue) {
+          document.getElementById(buttonId).textContent = newValue;
+      }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.container{
+    border: 3px solid rgb(35, 33, 33);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 95%;
+    margin-inline: auto;
+    margin-top: 80px;
+    border-radius: 30px;
+}
+.leMesg{
+    width: 70%;
+    height: 100%;
+
+}
+.social{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.page{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.for{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.nom{
+    font-size: 30PX;
+    padding-left: 15px;
+    margin-top: 30px;
+}
+.messg{
+    font-size: 30px;
+    padding-left: 15px;
+    display: flex;
+    gap: 5px;
+}
+.submit{
+    width: 140px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: END;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 4px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgba(22, 29, 172, 0.741);
+}
+.lien{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(41, 126, 175, 0.722);
+    color: rgba(4, 11, 199, 0.748);
+    text-decoration: none;
+    font-size: 60px;
+    margin-left: 20px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+.lien:hover{
+    background-color: wheat;
+    color: white;
+    border: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+}
+#inpNom{
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+#inpMes{
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 20px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}

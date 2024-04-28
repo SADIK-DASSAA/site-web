@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(bg.png);
+}
+.pack{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.choix{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: cornflowerblue;
+    border-radius: 30px;
+}
+select{
+    background-color: cornflowerblue;
+    border: 2px solid rgb(66, 139, 235);
+    outline: none;
+}
+button {
+    border: 2px solid rgb(66, 139, 235);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+}
+span{
+    font-size: 30px;
+    font-weight: bold;
+}
+h3{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+select{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid rgb(66, 139, 235);
+    outline: none;
+}
+select:focus{
+    border-radius: 10px;
+    outline: none;
+}
+select:hover{
+    border-radius: 10px;
+    outline: none;
+}
+select:active{
+    outline: none;
+}

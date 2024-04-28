@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PACK 1</title>
+    <link rel="stylesheet" href="pack1.css">
+    <link rel="x icon" type="shortcut icon" href="téléchargé.png">
+</head>
+<body>
+    <h3>choisissez votre configuration :</h3>
+    <div class="pack">
+        <div class="choix">
+            <select name="RAM" id="ram" onchange="updateButton('ramButton', this.value)">
+                <option value="   " selected>Mémoire</option>
+                <option value="8 Go">8 Go</option>
+            </select>
+        </div>
+        <span>+</span>
+        <div class="choix">
+            <select name="cpu" id="Cpu" onchange="updateButton('cpuButton', this.value)">
+                <option value="" selected>CPU</option>
+                <option value="i9 14900k">i9 14900k</option>
+                <option value="i9 13900k">i9 13900k</option>
+                <option value="Rayzen 9 7950X">Rayzen 9 7950X</option>
+                <option value="i7 14700k">i7 14700k</option>
+            </select>
+        </div>
+        <span>+</span>
+        <div class="choix">
+            <select name="vCore" id="vCore" onchange="updateButton('vCoreButton', this.value)">
+                <option value="" selected>vCore</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <span>+</span>
+        <div class="choix">
+            <select name="stockage" id="stockage" onchange="updateButton('stockageButton', this.value)">
+                <option value="" selected>Stockage</option>
+                <option value="50">50 Go NVMe</option>
+                <option value="100">100 Go NVMe</option>
+            </select>
+        </div>
+        <span>+</span>
+        <div class="choix">
+            <select name="système" id="système" onchange="updateButton('systèmeButton', this.value)">
+                <option value="" selected>S.E</option>
+                <option value="Linux">Linux</option>
+            </select>
+        </div>
+        <span>+</span>
+        <div class="choix">
+            <select name="securité" id="sécurité" onchange="updateButton('sécuritéButton',this.value)">
+                <option value="" selected>Sécurité</option>
+                <option value="Configuration d'un Pare-feu">Configuration d'un Pare-feu</option>
+            </select>
+        </div>
+    </div>
+    
+    <h3>Votre configuration est :</h3>
+    <div class="pack">
+        <div class="choix">
+            <button id="ramButton"></button>
+        </div>
+        <span>+</span>
+        <div class="choix">
+            <button id="cpuButton"></button>
+        </div>
+        <span>+</span>
+        <div class="choix">
+            <button id="vCoreButton"></button>
+        </div>
+        <span>+</span>
+        <div class="choix">
+            <button id="stockageButton"></button>
+        </div>
+        <span>+</span>
+        <div class="choix">
+            <button id="systèmeButton"></button>
+        </div>
+        <span>+</span>
+        <div class="choix">
+            <button id="sécuritéButton"></button>
+        </div>
+    </div>
+    
+    <script>
+        function updateButton(buttonId, newValue) {
+            document.getElementById(buttonId).textContent = newValue;
+        }
+    </script>
+    
+    </body>
+    </html>
+    
+    <script src="pack1.js"></script>
+</body>
+</html>
